@@ -158,7 +158,7 @@ try:
     try:
         for i in t:
             try:
-                temp = +re.findall(r"cks_push_alql_N_c=\"(.*?)\"", i)[0]
+                temp = re.findall(r"cks_push_alql_N_c=\"(.*?)\"", i)[0]
                 try:
                     N_c = int(temp)
                 except:
